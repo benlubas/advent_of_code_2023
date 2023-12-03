@@ -1,0 +1,2 @@
+:%s/eight/e8t/ge | %s/one/o1e/ge | %s/two/t2o/ge | %s/three/t3e/ge | %s/four/f4r/ge | %s/five/f5e/ge | %s/six/s6x/ge | %s/seven/s7n/ge | %s/nine/n9e/ge
+:so ./day01/part1

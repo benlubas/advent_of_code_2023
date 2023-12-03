@@ -1,0 +1,8 @@
+:%s/\D*\(\d\)\D*/\1/g
+:%s/^\d$/&&/
+:%s/\D*\(\d\).*\(\d\)\D*/\1\2/g
+:norm! vipJ
+:s/ /+/g
+:norm VD
+:let @a=eval(@")
+:norm "ap

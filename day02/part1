@@ -1,0 +1,11 @@
+:%s/\(\d*\) red/\=submatch(0) > 12 ? "VOID" : submatch(0)/ge
+:%s/\(\d*\) green/\=submatch(0) > 13 ? "VOID" : submatch(0)/ge
+:%s/\(\d*\) blue/\=submatch(0) > 14 ? "VOID" : submatch(0)/ge
+:g/VOID/d _
+:%s/Game \(\d*\).*/\1/
+:norm! vipJ
+:s/ /+/g
+:norm VD
+:let @a=eval(@")
+:norm "ap
+

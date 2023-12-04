@@ -1,0 +1,12 @@
+:%s/Game \d*: /
+:%s/\n/\r\r/
+:%s/[,;] /\r/g
+:let @s = "vip:sort! n\<CR>}j"
+:norm gg100@s
+:let @k = "ma/red0yiw'ap/blue0yiw'aA*p/green0yiw'aA*pojdapk"
+:norm ggO100@k
+:norm! vipJ
+:s/ /+/g
+:norm VD
+:let @a=eval(@")
+:norm "ap

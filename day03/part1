@@ -7,5 +7,9 @@
 :norm @ai.
 :%s/\./ /g
 :norm gg
-:let @s = "/\\d"
-:norm @s
+:let @n = "/\\d"
+:norm @n
+:let @t = "\"olh\"oyl:let @x = @o == \" \" ? @x : @x + 1"
+:let @n = "wh/\\d"
+
+:so ./day03/part1.1

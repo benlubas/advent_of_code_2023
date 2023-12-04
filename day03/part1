@@ -9,7 +9,22 @@
 :norm gg
 :let @n = "/\\d"
 :norm @n
-:let @t = "\"olh\"oyl:let @x = @o == \" \" ? @x : @x + 1"
+:let @t = "\"olh\"oyl:let @x = @o == \" \" ? @x : @x + 1"
 :let @n = "wh/\\d"
 
-:so ./day03/part1.1
+:let @u = "/\\d\\+"
+:norm @u
+:let @v = searchcount()["total"]
+:let @r = ":so ./day03/part1.1"
+:norm @v@r
+
+:%s/[^0-9 ]//g
+:%s/\n/ /
+:%s/\s*$//
+:%s/^\s*//
+:%s/\s\+/+/g
+
+:s/ /+/g
+:norm VD
+:let @a=eval(@")
+:norm "ap

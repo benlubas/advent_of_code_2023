@@ -19,6 +19,7 @@ join and replace whitespace with + to sum them
 
 
 ## result
+1169367 - too high
 
 # Part 2
 ## Idea

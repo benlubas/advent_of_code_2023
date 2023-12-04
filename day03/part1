@@ -1,0 +1,11 @@
+:%norm i.
+:%norm A.
+:let @a = col('$') - 1
+:norm ggO
+:norm @ai.
+:norm Go
+:norm @ai.
+:%s/\./ /g
+:norm gg
+:let @s = "/\\d"
+:norm @s

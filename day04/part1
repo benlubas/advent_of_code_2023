@@ -1,0 +1,15 @@
+:let @x = line('$')
+:%s/  / /g
+:%s/.*: //
+:%s/\n/\r\r
+:%s/ | /\r
+:%s/ \+/\r/g
+:norm gg
+:let @k = "jvip:let @a = line(\"'>'€kb\") - line(\"'<\") + 1gv:sort uvip:let @b = line(\"'>\") - line(\"/€kb'<\") + 1:let @c = @a - @bO:exe @c > 0 ? \"norm i1\" : \"\":exe @c > 1 ? \"norm \" .. (@c - 1) .. \"A*2\" : \"\"gvd"
+:norm @x@k
+:g/^\s*$/d _
+:norm! vipJ
+:s/ /+/g
+:norm VD
+:let @a = eval(@")
+:norm "ap

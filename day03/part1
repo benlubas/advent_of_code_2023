@@ -7,24 +7,18 @@
 :norm @ai.
 :%s/\./ /g
 :norm gg
-:let @n = "/\\d"
+:let @n = "/\\d\\+\<CR>"
 :norm @n
-:let @t = "\"olh\"oyl:let @x = @o == \" \" ? @x : @x + 1"
-:let @n = "wh/\\d"
-
-:let @u = "/\\d\\+"
-:norm @u
-:let @v = searchcount()["total"]
-:let @r = ":so ./day03/part1.1"
+:let @t = "\"oyl:let @x = @o == \" \" ? @x : @x + 1\<CR>"
+:let @v = searchcount(#{recompute: 1, maxcount: 0})["total"]
+:let @r = ":so ./day03/part1.1\<CR>"
 :norm @v@r
-
-:%s/[^0-9 ]//g
+:%s/[^0-9 ]/ /g
 :%s/\n/ /
 :%s/\s*$//
 :%s/^\s*//
 :%s/\s\+/+/g
-
-:s/ /+/g
+:s/\s/+/g
 :norm VD
 :let @a=eval(@")
 :norm "ap

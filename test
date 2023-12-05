@@ -1,18 +1,0 @@
-:let @t = "\"olh\"oyl:let @x = @o == \" \" ? @x : @x + 1"
-:let @n = "wh/\\d"
-:norm ma
-:let @x = 0
-:norm "cyiw
-:let @l = len(@c) + 1
-:let @d = "h"
-:let @q = "@d@t"
-:norm @q
-:let @d = "j"
-:norm @q
-:let @d = "l"
-:norm @l@q
-:let @d = "k"
-:norm 2@q
-:let @d = "h"
-:norm @l@q'a
-:exe @x == 0 ? "norm viwr @n" : "norm @n"

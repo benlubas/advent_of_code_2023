@@ -1,0 +1,16 @@
+:let @x = 0
+
+:let @p = "\"oyl:let @x = @o == \" \" ? @x : @x + 1\<CR>"
+:let @d = "h"
+:let @q = "@d@p"
+:norm @q
+:let @d = "j"
+:norm @q
+:let @d = "l"
+:norm @l@q
+:let @d = "k"
+:norm 2@q
+:let @d = "h"
+:norm @l@qjl
+:exe @x == 0 ? "norm viwr " : ""
+:norm @n

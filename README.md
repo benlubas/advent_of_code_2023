@@ -31,7 +31,7 @@ Search and replace is used _heavily_ to solve these problems. And in ways that y
 familiar with, in order from most to least useful (subjectively):
 
 - non-greedy (`:h non-greedy`)
-`:s/\{-}*hi` will match as few chars as possible before matching 'hi'. where `:s/.*hi` will match as
+`:s/.\{-}hi` will match as few chars as possible before matching 'hi'. where `:s/.*hi` will match as
 many as possible. This is the difference between matching "hi" vs "hi there hi" in the string: "hi
 there hi there"
 

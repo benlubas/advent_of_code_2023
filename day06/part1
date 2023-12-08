@@ -1,0 +1,20 @@
+:%s/.\{-}\s\+//
+:%s/\s\+/ /g
+:let @q = "jdwkelpi"
+:norm gg3@qJ
+:%s/\n/\r\r/
+
+:let @k = ":s/.*/\\=submatch(0) * (@t-submatch(0)) > @d\<CR>"
+:let @n = "\"tyiww\"dyiwo@to0vipgvip@k:norm! vipJ\<CR>:s/ /\\+/g\<CR>"
+
+:norm gg@njj@njj@njj@n
+
+:g/\d\+ \d\+/d _
+:g/^$/d _
+:%norm I(A)
+
+:norm! vipJ
+:s/ /*/g
+:norm VD
+:let @a = eval(@")
+:norm "ap

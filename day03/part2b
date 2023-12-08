@@ -1,6 +1,12 @@
 :let @x = 0
 
-:let @p = "\"oyl:let @x = @o == \" \" ? @x : @x + 1\<CR>"
+:let @p = "\"oyl"
+
+" still have to record the position
+:let @2 = "k@p:exe @o == \" \" ? \"norm @1\<CR>\" : \"norm \"ayl\<CR>"
+:let @1 = "hk"
+
+
 :let @d = "h"
 :let @q = "@d@p"
 :norm @q
@@ -13,4 +19,4 @@
 :let @d = "h"
 :norm @l@qjl
 :exe @x == 0 ? "norm viwr " : ""
-:norm @n
+:norm @g
